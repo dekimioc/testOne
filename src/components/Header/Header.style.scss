@@ -1,0 +1,15 @@
+#header-container {
+    background-color: #F3F3F3;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .header-text {
+        font-family: "Helvetica";
+        font-size: 15px;
+        line-height: 17px;
+        color: #000;
+        font-weight: bold;
+    }
+}
