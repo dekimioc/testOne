@@ -1,10 +1,23 @@
+import ReactPaginate from 'react-paginate';
+import './Pagination.style.scss'
 
-
-import './Pagination.scss'
-
-const PaginationComponent = ({currentPage, changeCurrentPage}) => {
+const PaginationComponent = ({changeCurrentPage}) => {
     return (
-    <div></div>
+        <div className="pagination-container">
+        <ReactPaginate 
+            nextLabel={">"}
+            breakLabel={"..."}
+            breakClassName={"break-me"}
+            pageCount={100}
+            marginPagesDisplayed={2}
+            pageRangeDisplayed={1}
+            onPageChange={changeCurrentPage}
+            containerClassName={"pagination"}
+            subContainerClassName={"pages pagination"}
+            activeClassName={"active"}
+            previousLabel={"<"}
+            />
+            </div>
     )
 };
 
