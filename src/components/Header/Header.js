@@ -6,7 +6,7 @@ import './Header.style.scss'
 const Header = ({title}) => {
     return(
         <div className="container-fluid" id="header-container">
-            <h1 className="text-left header-text">{title}</h1>
+            <h1 className="text-left header-text mb-0">{title}</h1>
         </div>
     )
 }

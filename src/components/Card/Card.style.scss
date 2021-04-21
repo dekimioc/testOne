@@ -1,18 +1,18 @@
 .user-card {
     border-bottom: 1px solid #EAEAEA;
     transition: all .3s linear;
+    max-width: 100%;
     .user-image {
         width: 74px;
         height: 74px;
         object-fit: cover;
-        transition: all .3s linear;
+        transition: all .2s linear;
     }
     .card-name {
         font-size: 14px;
-        font-family: Helvetica;
+        font-family: "Helvetica";
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
         line-height: 18px;
         color: #303133;
         transition: all .3s linear;
