@@ -17,6 +17,18 @@
         color: #303133;
         transition: all .3s linear;
     }
+    .fading-image {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 100;
+        opacity: 0;
+        max-width: 100%;
+        visibility: hidden;
+    }
 }
 
 .clickedRow {
@@ -27,4 +39,47 @@
         -webkit-filter: brightness(50%);
         filter: brightness(50%);
     }
+    .animation {
+        animation: fadeIn 1s;
+        -webkit-animation: fadeIn 1s;
+        -moz-animation: fadeIn 1s;
+        -o-animation: fadeIn 1s;
+        -ms-animation: fadeIn 1s;
+        visibility: visible;
+        @keyframes fadeIn {
+  0% {opacity:0; }
+  5% {opacity:0.05;}
+  50%{opacity: 1}
+  100% {opacity:0;}
+}
+
+@-moz-keyframes fadeIn {
+   0% {opacity:0;}
+  5% {opacity:0.05;}
+  50%{opacity: 1}
+  100% {opacity:0;}
+}
+
+@-webkit-keyframes fadeIn {
+   0% {opacity:0;}
+  5% {opacity:0.05;}
+  50%{opacity: 1}
+  100% {opacity:0;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+  5% {opacity:0.05;}
+  50%{opacity: 1}
+  100% {opacity:0;}
+}
+
+@-ms-keyframes fadeIn {
+   0% {opacity:0;}
+  5% {opacity:0.05;}
+  50%{opacity: 1}
+  100% {opacity:0;}
+}
+    }
+    
 }

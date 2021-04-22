@@ -50,7 +50,7 @@ const CardsWrapper = () => {
   };
 
     return (
-    !errorMessage && errorMessage.length === 0 ? <div className="container-fluid">
+    !errorMessage && errorMessage.length === 0 ? <div className="container-fluid" id="cards-wrapper">
             {isLoaded ?  <Card data={users} /> : <Loader />}
             <PaginationComponent changeCurrentPage={(numPage) => changeCurrentPage(numPage)}/>
         </div> : <ErrorModal errorText={errorMessage} errorDetails={errorDetailsMessage}/> 
