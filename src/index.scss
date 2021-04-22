@@ -16,4 +16,9 @@ code {
  font-family: "Helvetica";
  src: local("Helvetica"),
   url("./fonts/Helvetica/Helvetica.ttf") format("truetype");
+  src: url('./fonts/Helvetica/Helvetica.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/Helvetica/Helvetica.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/Helvetica/Helvetica.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/Helvetica/Helvetica.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./fonts/Helvetica/Helvetica.svg') format('svg'); /* Legacy iOS */
 }

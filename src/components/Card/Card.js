@@ -23,7 +23,7 @@ const Card = ({data}) => {
         data.map(e => <div 
                         key={e.id} 
                         className={`user-card col-12 pt-3 pb-3 pl-0 d-flex flex-md-row align-items-center position-relative ${e.id === clickedElement ? "clickedRow" : ''}`} 
-                        onClick={event => clickedElementHandler(e.id)}>
+                        onClick={() => clickedElementHandler(e.id)}>
                         <img className="user-image mr-3" src={e.owner.avatar_url} alt={e.owner.login}/>
                         <p className="mb-0 card-name">{Object.keys(e.files)[0]}</p>
                         <img className={`fading-image ${e.id === clickedImage ? "animation" : ""}`} src={e.owner.avatar_url} alt={e.owner.login}/>
